@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/r-mathieu/r-mathieu.github.io.git
+	branch = main

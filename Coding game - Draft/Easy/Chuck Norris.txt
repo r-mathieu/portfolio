@@ -1,0 +1,42 @@
+https://www.codingame.com/ide/puzzle/chuck-norris
+
+#include <iostream>
+#include <string>
+#include <bitset>
+
+using namespace std;
+
+int main()
+{
+    string message;
+    getline(cin, message);
+
+    string encodedMessage = "";
+    char previousValue = 'a';
+    for(char& charMessage : message)
+    {
+        string binaryMessage = bitset<7>(charMessage).to_string();
+        
+        for(int index = 0; index < binaryMessage.length(); index++)
+        {
+            const char& value = binaryMessage[index];
+
+            if(value == previousValue)
+            {
+                encodedMessage += '0';
+            }
+            else
+            {
+                string block = encodedMessage.length() > 0 ? " " : "";
+                block.insert(block.length(), value == '1' ? "0 " : "00 ");
+
+                encodedMessage.insert(encodedMessage.length(), block);
+                index--;
+            }
+
+            previousValue = value;
+        }
+    }
+
+    cout << encodedMessage << endl;
+}

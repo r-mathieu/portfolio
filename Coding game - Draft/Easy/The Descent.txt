@@ -1,0 +1,32 @@
+https://www.codingame.com/ide/puzzle/the-descent
+
+Solution:
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int targetIndex = 0;
+
+    // game loop
+    for(;;)
+    {
+        int highestMountain = 0;
+        for (int index = 0; index < 8; index++)
+        {
+            int mountainHeight;
+            cin >> mountainHeight;
+            cin.ignore();
+
+            if(mountainHeight >= highestMountain)
+            {
+                targetIndex = index;
+                highestMountain = mountainHeight;
+            }
+
+        }
+
+        cout << targetIndex << endl;
+    }
+}

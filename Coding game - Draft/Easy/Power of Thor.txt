@@ -1,0 +1,57 @@
+https://www.codingame.com/ide/puzzle/power-of-thor-episode-1
+
+Solution:
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int lightX; // the X position of the light of power
+    int lightY; // the Y position of the light of power
+    int initialTX; // Thor's starting X position
+    int initialTY; // Thor's starting Y position
+    cin >> lightX >> lightY >> initialTX >> initialTY; cin.ignore();
+
+    int currentTX = initialTX;
+    int currentTY = initialTY;
+
+    // game loop
+    for(;;)
+    {
+        int remainingTurns; // The remaining amount of turns Thor can move. Do not remove this line.
+        cin >> remainingTurns;
+        cin.ignore();
+
+        string XResult = "";
+        string YResult = "";
+
+        //LATERAL MOVEMENT
+        if(currentTX > lightX)
+        {
+            XResult = 'W';
+            currentTX--;
+        }
+        else if(currentTX < lightX)
+        {
+            XResult = 'E';
+            currentTX++;
+        }
+        
+        //VERTICAL MOVEMENT
+        if(currentTY > lightY)
+        {
+            YResult = 'N';
+            currentTY--;
+        }
+        else if(currentTY < lightY)
+        {
+            YResult = 'S';
+            currentTY++;
+        }
+
+        cout << YResult << XResult << endl;
+    }
+}

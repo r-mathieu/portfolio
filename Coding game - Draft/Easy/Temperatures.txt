@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+https://www.codingame.com/ide/puzzle/temperatures
+
+int main()
+{
+    int totalTemperatures; // the number of temperatures to analyse
+    cin >> totalTemperatures; cin.ignore();
+
+    if(totalTemperatures == 0)
+    {
+        cout << "0" << endl;
+        return 1;
+    }
+
+    int closestTemperature;
+    cin >> closestTemperature; cin.ignore();
+    for (int index = 1; index < totalTemperatures; index++)
+    {
+        int temperature; // a temperature expressed as an integer ranging from -273 to 5526
+        cin >> temperature; cin.ignore();
+
+        if (abs(temperature) < abs(closestTemperature) || (temperature == -closestTemperature && temperature > 0))
+        {
+            closestTemperature = temperature;
+        }
+    }
+
+    cout << closestTemperature << endl;
+}
