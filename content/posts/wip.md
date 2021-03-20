@@ -5,7 +5,8 @@ author: "Mathieu"
 authorLink: ""
 description: ""
 license: ""
-hiddenFromHomePage: true
+
+hiddenFromHomePage: false
 
 featuredImage: ""
 featuredImagePreview: ""
