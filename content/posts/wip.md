@@ -1,13 +1,10 @@
 ---
-title: "wip"
+title: "I'm working on it ♥"
 draft: false
 author: "Mathieu"
 authorLink: ""
 description: ""
 license: ""
-
-tags: ["WIP"]
-categories: ["WIP"]
 hiddenFromHomePage: true
 
 featuredImage: ""

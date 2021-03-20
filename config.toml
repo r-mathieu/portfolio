@@ -38,7 +38,7 @@ enableEmoji = true
     url = "/posts/professional-project/"
     # title will be shown when you hover on this menu link
     title = ""
-    weight = 1
+    weight = 2
 
   [[menu.main]]
     identifier = "coding-game"
@@ -47,7 +47,7 @@ enableEmoji = true
     name = "Coding Game"
     url = "/coding-game/"
     title = "Coding Game"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     identifier = "about"
@@ -56,7 +56,7 @@ enableEmoji = true
     name = "About"
     url = "/about"
     title = "About"
-    weight = 3
+    weight = 4
      
 
 [params]
@@ -226,7 +226,7 @@ enableEmoji = true
     author = true
 
     # site creation time
-    since = 2020
+    since = 2021
 
     # ICP info only in China (HTML format is supported)
     icp = ""
