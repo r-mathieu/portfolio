@@ -1,8 +1,7 @@
 ---
 weight: 1
 title: "Ghost Recon Breakpoint"
-date: 2020-04-25
-lastmod: 2020-05-22
+date: 2019-10-04
 draft: false
 author: "Mathieu"
 
