@@ -123,7 +123,7 @@ enableEmoji = true
     Facebook = "math.rzd"
     Twitter = ""
     Instagram = ""
-    GitHub = ""
+    GitHub = "r-mathieu"
     Telegram = ""
     Medium = ""
     Gitlab = ""
@@ -220,10 +220,10 @@ enableEmoji = true
     hugo = false
 
     # whether to show copyright info
-    copyright = true
+    copyright = false
 
     # whether to show the author
-    author = true
+    author = false
 
     # site creation time
     since = 2021
